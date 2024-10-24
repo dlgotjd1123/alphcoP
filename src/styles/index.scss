@@ -1,0 +1,23 @@
+.header {
+	border: 5px solid blue;
+}
+.footer {
+	border: 5px solid red;
+}
+main {
+	border: 5px solid orange;
+}
+
+//common style
+@import 'common/reset';
+@import 'common/header';
+@import 'common/footer';
+@import 'common/layout';
+
+//page style
+@import 'pages/home';
+@import 'pages/hotel';
+@import 'pages/act';
+@import 'pages/gallery';
+@import 'pages/program';
+@import 'pages/membership';
