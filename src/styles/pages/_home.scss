@@ -1,0 +1,38 @@
+.main-content {
+  padding: 20px;
+}
+
+.main-image {
+  position: relative;
+  background-image: url('/src/pages/img/main-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  color: white;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  margin-top: 0px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
