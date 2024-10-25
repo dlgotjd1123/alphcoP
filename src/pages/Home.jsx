@@ -15,22 +15,22 @@ export default function Home() {
 				</div>
 				<div className="grid-section">
 					<div className="grid-item">
-						<Link to='/act'>
+						<Link to='/hotel'>
 							<img src="/src/pages/img/img1.jpg" alt=" 1" />
 						</Link>
-						<p>Activities</p>
+						<p>객실</p>
 					</div>
 					<div className="grid-item">
-						<Link to='/gallery'>
+						<Link to='/act'>
 							<img src="/src/pages/img/img2.jpg" alt=" 2" />
 						</Link>
-						<p>Gallery</p>
+						<p>공지사항</p>
 					</div>
 					<div className="grid-item">
-						<Link to='/program'>
+						<Link to='/map'>
 							<img src="/src/pages/img/img3.jpg" alt=" 3" />
 						</Link>
-						<p>Program</p>
+						<p>찾아오시는 길</p>
 					</div>
 				</div>
 			</div>
