@@ -1,18 +1,13 @@
 import Layout from '../components/Layout';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
-	const navigate = useNavigate();
 
-	// css로 관리되는 배경 클릭시 hotel로 라우트
-	const handleImageClick = () => {
-		navigate('/hotel');
-	};
 
 	return (
 		<div className="main-page">
 			<div className="main-content">
-					<div className="main-image" onClick={handleImageClick}>
+					<div className="main-image">
 					<Layout title='Home'>		
 						<p>Lorem ipsum dolor sit amet.</p>				
 					</Layout>

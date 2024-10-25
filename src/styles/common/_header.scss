@@ -1,18 +1,49 @@
-header {
-	width: 100%;
-	padding: 30px 10vw;
+.header {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd; /* 하단의 경계선 */
+	padding: 10px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #bbbbbba8;
-
+  
 	.logo {
-		font-size: 1.4rem;
+		font-size: 1.8rem;
+		font-weight: bold;
+		margin-left: 20px;
+
+		a {
+			text-decoration: none;
+			color: #333;
+			&:hover {
+				color: #555;
+		}
+		}
 	}
 
 	.gnb {
-		font-size: 1rem;
 		display: flex;
-		gap: 30px;
+		list-style: none;
+		margin-right: 20px;
+
+		li {
+			margin: 0 15px;
+		
+			a {
+				text-decoration: none;
+				font-size: 1rem;
+				color: #333;
+				transition: color 0.3s;
+
+			&.on {
+				font-weight: bold;
+				color: #000; /* 현재 활성화된 링크에 대한 스타일 */
+				}
+
+			&:hover {
+			color: #555; /* 링크에 마우스를 올렸을 때의 색상 */
+				}
+			}
+		}
 	}
-}
+  }
+  

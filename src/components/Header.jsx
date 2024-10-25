@@ -14,24 +14,19 @@ export default function Header() {
 			<ul className='gnb'>
 				<li>
 					<Link to='/hotel' className={pathname === '/hotel' ? 'on' : ''}>
-						HOTEL
+						객실
 					</Link>
 				</li>
 				<li>
 					<Link to='/act' className={pathname === '/act' ? 'on' : ''}>
-						ACTIVITIES
+						공지사항
 					</Link>
 				</li>
-				<li>
-					<Link to='/gallery' className={pathname === '/gallery' ? 'on' : ''}>
-						GALLERY
-					</Link>
-				</li>
-				<li>
-					<Link to='/program' className={pathname === '/program' ? 'on' : ''}>
-						PROGRAM
-					</Link>
-				</li>
+			<li>
+				<Link to="/map" className={pathname === '/map' ? 'on' : ''}>
+					찾아오시는 길
+				</Link>
+            </li>
 
 			</ul>
 		</header>
