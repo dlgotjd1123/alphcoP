@@ -32,11 +32,7 @@ export default function Header() {
 						PROGRAM
 					</Link>
 				</li>
-				<li>
-					<Link to='/membership' className={pathname === '/membership' ? 'on' : ''}>
-						MEMBERSHIP
-					</Link>
-				</li>
+
 			</ul>
 		</header>
 	);
