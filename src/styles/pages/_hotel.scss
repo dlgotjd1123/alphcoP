@@ -1,0 +1,54 @@
+.hotel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.room-info {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    padding-right: 20px;
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 10px;
+    }
+}
+
+.room-slider {
+    flex: 1;
+    max-width: 50%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+
+    .slider-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out; /* 슬라이드 애니메이션 */
+    }
+
+    .room-image {
+        min-width: 100%; /* 각 이미지가 슬라이더의 전체 넓이를 차지 */
+        height: 100%;
+        object-fit: cover;
+    }
+}
