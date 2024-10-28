@@ -12,8 +12,8 @@ const roomData = [
 		"/src/pages/img/single5.jpg"
     ],
     description: "싱글룸 설명",
-    subTitle: "Vista Walkerhill Seoul - Grand Walkerhill Seoul",
-    info: "Human, Nature, and Technology"
+    subTitle: "1인",
+    info: "평일 55,000원, 주말 70,000원"
 },
 {
     type: "커플룸",
@@ -25,8 +25,8 @@ const roomData = [
 		"/src/pages/img/couple5.jpg"
     ],
     description: "커플룸 설명",
-    subTitle: "Douglas House",
-    info: "Romantic Getaway for Couples"
+    subTitle: "1~2인",
+    info: "평일 80,000원, 주말 100,000원"
 },
 {
     type: "단체룸",
@@ -38,8 +38,8 @@ const roomData = [
 		"/src/pages/img/group5.jpg"
     ],
     description: "단체룸 설명",
-    subTitle: "Group-friendly Space",
-    info: "Perfect for Group Gatherings"
+    subTitle: "4~8인",
+    info: "평일 150,000원, 주말 200,000원"
 }
 ];
 
