@@ -31,7 +31,9 @@ const Hotel = () => {
       });
     };
 
-    return () => document.head.removeChild(script);
+    return () => {
+      document.head.removeChild(script);
+    };
   }, []);
 
   return (

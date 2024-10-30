@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Map from './pages/Map';
@@ -12,8 +12,10 @@ import './App.css';
 function App() {
 	const location = useLocation();
 	const [loading, setLoading] = useState(true);
+	const nodeRef = useRef(null);
 
 	useEffect(() => {
+		setLoading(true);
 		const handleLoad = () => {
 			setTimeout (() => setLoading(false), 1000);
 		};
@@ -23,22 +25,24 @@ function App() {
 
 	return (
 		<>
-			<Header />
-			{loading ? (
+			{loading && (
 				<div className='loading'>
 					<p>로딩중...</p>
 				</div>
-			) : (
-			<TransitionGroup>
-				<CSSTransition key={location.key} classNames='fade' timeout={300} unmountOnExit>
-					<Routes location={location}>
-						<Route path='/' element={<Home />} />
-						<Route path='/hotel' element={<Hotel />} />
-						<Route path='/map' element={<Map />} />
-						<Route path='/act' element={<Act />} />
-					</Routes>
-				</CSSTransition>
-			</TransitionGroup>
+			)}
+			
+			<Header />
+			{!loading && (
+				<TransitionGroup>
+					<CSSTransition key={location.key} nodeRef={nodeRef} classNames='fade' timeout={300} unmountOnExit>
+						<Routes location={location}>
+							<Route path='/' element={<Home />} />
+							<Route path='/hotel' element={<Hotel />} />
+							<Route path='/map' element={<Map />} />
+							<Route path='/act' element={<Act />} />
+						</Routes>
+					</CSSTransition>
+				</TransitionGroup>
 	)}
 
 			<Footer />
