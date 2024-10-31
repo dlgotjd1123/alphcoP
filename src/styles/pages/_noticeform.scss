@@ -1,0 +1,71 @@
+// NoticeForm 전체 레이아웃
+.notice-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    label {
+      display: block;
+      font-weight: 600;
+      color: #555;
+      margin-top: 10px;
+    }
+  
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+  
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    }
+  
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  
+    .message {
+      font-size: 14px;
+      color: green;
+      margin-top: 15px;
+      text-align: center;
+    }
+  
+    .error-message {
+      color: red;
+    }
+  }
+  

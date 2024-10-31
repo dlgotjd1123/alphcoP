@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Map from './pages/Map';
 import Hotel from './pages/Hotel';
 import Notice from './pages/Notice';
+import NoticeForm from './pages/NoticeForm' 
 import Home from './pages/Home';
 import './App.css';
 
@@ -40,6 +41,7 @@ function App() {
 							<Route path='/hotel' element={<Hotel />} />
 							<Route path='/map' element={<Map />} />
 							<Route path='/notice' element={<Notice />} />
+							<Route path='/notice/create' element={<NoticeForm />} />
 						</Routes>
 					</CSSTransition>
 				</TransitionGroup>
