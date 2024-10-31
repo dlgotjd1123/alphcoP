@@ -5,16 +5,16 @@ import Layout from '../components/Layout';
 
 export default function Notice() {
     const [notices, setNotices] = useState([]);
-    const [expandedId, setExpandedId] = useState(null); // 펼쳐진 공지사항 ID
+    const [expandedId, setExpandedId] = useState(null); 
 
     useEffect(() => {
         fetchNotices();
     }, []);
 
-  // 공지사항 데이터 가져오기 함수
     const fetchNotices = () => {
         axios.get('http://localhost:8000/api/notices/')
         .then((response) => {
+            setNotices(response.data.sort((a, b) => new Date(b.created) - new Date(a.created)));
             setNotices(response.data);
         })
         .catch((error) => {
@@ -22,7 +22,6 @@ export default function Notice() {
         });
     };
 
-  // 공지사항을 클릭하면 펼치기/접기 기능을 제공하는 함수
     const toggleExpand = (id) => {
         setExpandedId(expandedId === id ? null : id);
     };
