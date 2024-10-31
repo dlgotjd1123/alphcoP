@@ -21,7 +21,7 @@ export default function Home() {
 						<p>객실</p>
 					</div>
 					<div className="grid-item">
-						<Link to='/act'>
+						<Link to='/notice'>
 							<img src="/src/pages/img/img2.jpg" alt=" 2" />
 						</Link>
 						<p>공지사항</p>

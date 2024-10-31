@@ -25,7 +25,7 @@ export default function Footer() {
 				</Link>
             </li>
             <li>
-				<Link to="/act" className={pathname === '/act' ? 'on' : ''}>
+				<Link to="/notice" className={pathname === '/notice' ? 'on' : ''}>
 					공지사항
 				</Link>
             </li>
